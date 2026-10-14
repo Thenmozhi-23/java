@@ -5,7 +5,7 @@ agent any
  
         stage('Clone Code') { 
             steps { 
-                git branch: 'main', url: 'https://github.com/kabil164/jenkins-demo.git' 
+                git branch: 'master', 'https://github.com/Thenmozhi-23/java.git' 
             } 
         } 
  
@@ -17,7 +17,7 @@ agent any
  
         stage('Run Code') { 
             steps { 
-                bat 'java demo' 
+                bat 'java main' 
             } 
         } 
  
